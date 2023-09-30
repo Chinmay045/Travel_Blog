@@ -218,3 +218,81 @@ img {
         align-items: center;
         justify-content: center;
     }
+
+    .footer {
+        background-color: #008fd1;
+        padding: 1rem;
+        color: white;
+    }
+
+    .footer h2 {
+        text-transform: uppercase;
+    }
+
+    @media(min-width:768px) {
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer .box {
+            flex: 0 0 calc(33.3%-1rem);
+        }
+    }
+
+    .footer p {
+        line-height: 2rem;
+        /* padding: 1rem; */
+    }
+
+    .footer ul {
+        padding: 1rem;
+    }
+
+    .footer ul li {
+        margin-bottom: 1rem;
+    }
+
+    .social-nav {
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .social-nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .social-nav span {
+        display: none;
+    }
+
+    .social-nav a {}
+
+    .social-nav a::before {
+        font-weight: "Font  Awesome 5 Brands";
+        color: white;
+        font-size: 2rem;
+
+    }
+
+    .social-nav a[href*='facebook.com']::before {
+        content: '\f09a';
+    }
+
+    .social-nav a[href*='twitter.com']::before {
+        content: '\e61b';
+    }
+
+    .social-nav a[href*='youtube.com']::before {
+        content: '\f167';
+    }
+
+    .social-nav a[href*='instagram.com']::before {
+        content: '\f09a';
+    }
+
+    .social-nav a[href*='pinterest.com']::before {
+        content: '\f09a';
+    }
